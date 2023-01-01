@@ -4,18 +4,18 @@ public class MaxMinInArray {
 
     public static void main(String[] args) {
 
-        int[] arr={23,54,26,43,58,33};
+        int[] arr = {23, 54, 26, 43, 58, 33};
         sort(arr);
-        System.out.println("max is: "+arr[arr.length-1]+" and min is: "+arr[0]);
+        System.out.println("max is: " + arr[arr.length - 1] + " and min is: " + arr[0]);
     }
 
 
     private static void sort(int[] arr) {
         int temp;
-        int n=arr.length;
-        boolean sorted=true;
+        int n = arr.length;
+        boolean sorted = true;
 
-        for (int i = 0; i < n-1; i++) {
+        for (int i = 0; i < n - 1; i++) {
 
             for (int j = 0; j < n - i - 1; j++) {
 
@@ -32,14 +32,14 @@ public class MaxMinInArray {
 
             if (sorted) break;
         }
-       printArray(arr);
+        printArray(arr);
 
     }
 
     private static void printArray(int[] arr) {
 
-        for (int ele:arr) {
-            System.out.print(ele+" ");
+        for (int ele : arr) {
+            System.out.print(ele + " ");
         }
     }
 }
